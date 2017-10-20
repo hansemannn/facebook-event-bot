@@ -41,7 +41,7 @@ class FacebookEventBot {
 	
 	public function attendAllEvents() {
 		try {
-			$response = $this->fb->get('/' . $this->pageId . '/events', $this->accessToken);
+			$response = $this->fb->get('/' . $this->pageId . '/events?time_filter=upcoming', $this->accessToken);
 		  	$body = $response->getDecodedBody()['data'];
 		  	$matching = array();
 			$result = array();
