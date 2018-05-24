@@ -2,6 +2,9 @@
 
 A quick Facebook Event Bot that will attend all specified events of the specified Facebook page.
 
+> 🚨Facebook removed the **Page Events** Node from their Graph API in v5.0.0 of their SDK, so this script
+does not work anymore. Thanks Mark!
+
 ## Example
 
 ```php
